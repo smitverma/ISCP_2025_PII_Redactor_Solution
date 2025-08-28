@@ -2,8 +2,8 @@
 # ISCP 2025 - Project Guardian 2.0 (SOC Challange)
 
 # Author
-Smit Verma
-CTFd Username : smitvermawork
+Smit Verma <br>
+CTFd Username : smitvermawork <br>
 Email ID : smitvermawork@gmail.com
 # Redaction Methodology
 1. I have opted for a hybrid masking methodology for securing PII.
