@@ -16,8 +16,8 @@ Email ID : smitvermawork@gmail.com
 	
 	| Original Value              | Redacted Value    |
 	| --------------------------- | ----------------- |
-	| `we@domain.com`             | `wXXX@dXXX.com` |
-	| `mynameisdavid@davidcafe.in`  | `mXXX@dXXX.com` |
+	| `we@domain.com`             | `EMAIL_wXXX@dXXX.com` |
+	| `mynameisdavid@davidcafe.in`  | `EMAIL_mXXX@dXXX.com` |
 
 	- This fixed length redaction allows for few benefits :
 		-  **Enhanced Privacy**: Hides actual username length, reducing re-identification risk (especially for very short usernames)
@@ -32,8 +32,8 @@ Email ID : smitvermawork@gmail.com
    
 		| Original Value              | Redacted Value |
 		| --------------------------- | -------------- |
-		| `r@okhdfc`                  | `rXXX@okhdfc`  |
-		| `deepakumariverma123@oksbi` | `dXXX@oksbi`   |
+		| `r@okhdfc`                  | `UPI_rXXX@okhdfc`  |
+		| `deepakumariverma123@oksbi` | `UPI_dXXX@oksbi`   |
 # Error Handling in Logs
 - Sometimes, logs can contain error in JSON or CSV that can lead to parser crashes. 
 - To handle such cases, I have implemented error-handling that defaults to full redaction of `data_json` field, based on the principle : A lost log entry is less damaging than PII data leak.
